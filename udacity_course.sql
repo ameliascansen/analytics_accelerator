@@ -67,3 +67,5 @@ where name NOT like ('C%');
 SELECT name
 FROM accounts
 WHERE name NOT LIKE '%one%';
+
+
