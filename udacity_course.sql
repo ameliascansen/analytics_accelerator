@@ -68,4 +68,10 @@ SELECT name
 FROM accounts
 WHERE name NOT LIKE '%one%';
 
-
+--AND operator:used within a WHERE statement to consider more than one logical clause at a time. Each time you link a new statement with an AND, you will need to specify the column you are interested in looking at. 
+--BETWEEN operator:
+  -- instead of: WHERE column >= 6 AND column <= 10
+  -- can use: WHERE column BETWEEN 6 AND 10
+select standard_qty, poster_qty, gloss_qty
+from orders
+where standard_qty > 1000 AND poster_qty = 0 AND gloss_qty = 0;
