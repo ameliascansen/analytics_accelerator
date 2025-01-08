@@ -117,6 +117,7 @@ LIMIT 10;
 
 --JOINS: allow us to pull data from more than one table at a time.
 --The FROM clause indicates the first table from which we're pulling data, and the JOIN indicates the second table. The ON* clause specifies the column on which you'd like to merge the two tables together.
+--the on statememt should always occur with the foreign key being equal to the primary key
 --pull all the information from only the orders table:
 SELECT orders.*
 FROM orders
