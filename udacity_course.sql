@@ -116,6 +116,11 @@ ORDER BY col5
 LIMIT 10;
 
 --JOINS: allow us to pull data from more than one table at a time.
+-- inner joins pulls rows only if they exist as a match across two tables.
+-- a left join and right join do the same thing if we change the tables that are in the from and join statements
+-- a left join will at least return all the rows that are in an inner join
+-- join and inner join are the same
+-- a left outer join is the same as left join
 --The FROM clause indicates the first table from which we're pulling data, and the JOIN indicates the second table. The ON* clause specifies the column on which you'd like to merge the two tables together.
 --the on statememt should always occur with the foreign key being equal to the primary key
 --pull all the information from only the orders table:
@@ -202,6 +207,10 @@ JOIN accounts a
 ON a.sales_rep_id = s.id
 JOIN orders o
 ON o.account_id = a.id;
+
+--LEFT and RIGHT table joins
+--left table join:
+  --select, from left table, left join right table
 
 
 
